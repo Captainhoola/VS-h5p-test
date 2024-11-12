@@ -9,14 +9,14 @@
 </head>
 <body>
 
-<script src="./assets/dist/main.bundle.js" onload="initializeH5P();"></script>
+<script src="assets/dist/main.bundle.js" onload="initializeH5P();"></script>
   
 <div id="h5p-containerG"></div> <!-- Container for the H5P content -->
   
 <script>
   const el = document.getElementById('h5p-containerG');
   const options = {
-    h5pJsonPath: '/my-content/AudioRecorderV2', // Path to your .h5p file
+    h5pJsonPath: 'my-content/AudioRecorderV2', // Path to your .h5p file
     frameJs: 'assets/dist/frame.bundle.js', // Path to frame JS
     frameCss: 'assets/dist/styles/h5p.css' // Path to H5P CSS
   };
