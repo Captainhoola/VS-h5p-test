@@ -4,21 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>H5P Standalone Example</title>
-  <script src="/assets/dist/main.bundle.js"></script> <!-- Include h5p-standalone main bundle -->
-  <link rel="stylesheet" href="/assets/dist/styles/h5p.css"> <!-- H5P styles -->
+  <script src="assets/dist/main.bundle.js"></script> <!-- Include h5p-standalone main bundle -->
+  <link rel="stylesheet" href="assets/dist/styles/h5p.css"> <!-- H5P styles -->
 </head>
 <body>
 
+
+  
 <div id="h5p-containerG"></div> <!-- Container for the H5P content -->
 
-<script src="./assets/dist/main.bundle.js" onload="initializeH5P()"></script>
+<script src="assets/dist/main.bundle.js" onload="initializeH5P()"></script>
   
 <script>
   const el = document.getElementById('h5p-containerG');
   const options = {
     h5pJsonPath: '/my-content/AudioRecorderV2', // Path to your .h5p file
-    frameJs: '/assets/dist/frame.bundle.js', // Path to frame JS
-    frameCss: '/assets/dist/styles/h5p.css' // Path to H5P CSS
+    frameJs: 'assets/dist/frame.bundle.js', // Path to frame JS
+    frameCss: 'assets/dist/styles/h5p.css' // Path to H5P CSS
   };
 
   // Initialize H5P content using h5p-standalone library
